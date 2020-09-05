@@ -22,6 +22,7 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_main">
 
+        <!--Step 2 Add ExpandableListView to NavigationView-->
         <ExpandableListView
             android:id="@+id/expandMenu"
             android:layout_width="match_parent"
@@ -29,6 +30,7 @@
             android:layout_marginTop="175dp"
             android:indicatorEnd="400dp"
             android:groupIndicator="@null"/>
+        <!--groupIndicator is null-->
 
     </com.google.android.material.navigation.NavigationView>
 

@@ -19,6 +19,7 @@ class ExpandableListAdapter(private val context: Context) : BaseExpandableListAd
     private var listDataChild: HashMap<String, List<String>> = HashMap()
 
     init {
+        //Creating menu structure
 
         // Adding data header
         listDataHeader.add("Home")
@@ -119,6 +120,7 @@ class ExpandableListAdapter(private val context: Context) : BaseExpandableListAd
                     it.visibility = View.VISIBLE
                 }
             }
+            //if the submenu is empty, then hide indicator
             getChildrenCount(groupIndex) == 0 ->
             {
                 indicatorView?.visibility = View.INVISIBLE

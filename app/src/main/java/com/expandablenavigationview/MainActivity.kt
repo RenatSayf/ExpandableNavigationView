@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity()
 
 
 
-        //region TODO Step
+        //region Setup ExpandableListView and navigation perform
         val expandableListAdapter = ExpandableListAdapter(this)
         expandMenu.apply {
             setAdapter(expandableListAdapter)
