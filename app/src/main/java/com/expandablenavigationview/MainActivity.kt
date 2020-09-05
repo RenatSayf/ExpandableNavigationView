@@ -79,34 +79,29 @@ class MainActivity : AppCompatActivity()
                         p2 == 1 && p3 == 0 ->
                         {
                             nav_host_fragment.findNavController().navigate(R.id.nav_red_camera)
-                            drawerLayout.closeDrawer(GravityCompat.START, true)
                         }
                         p2 == 1 && p3 == 1 ->
                         {
                             nav_host_fragment.findNavController().navigate(R.id.nav_green_camera)
-                            drawerLayout.closeDrawer(GravityCompat.START, true)
                         }
                         p2 == 2 && p3 == 0 ->
                         {
                             nav_host_fragment.findNavController().navigate(R.id.nav_pictures)
-                            drawerLayout.closeDrawer(GravityCompat.START, true)
                         }
                         p2 == 2 && p3 == 1 ->
                         {
                             nav_host_fragment.findNavController().navigate(R.id.nav_documents)
-                            drawerLayout.closeDrawer(GravityCompat.START, true)
                         }
                         p2 == 3 && p3 == 0 ->
                         {
                             nav_host_fragment.findNavController().navigate(R.id.nav_my_slideshow)
-                            drawerLayout.closeDrawer(GravityCompat.START, true)
                         }
                         p2 == 3 && p3 == 1 ->
                         {
                             nav_host_fragment.findNavController().navigate(R.id.nav_friends_slides)
-                            drawerLayout.closeDrawer(GravityCompat.START, true)
                         }
                     }
+                    drawerLayout.closeDrawer(GravityCompat.START, true)
                     return false
                 }
             })
