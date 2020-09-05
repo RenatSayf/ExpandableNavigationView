@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.expandablenavigationview.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_red_camera"
+        android:name="com.expandablenavigationview.ui.camera.RedCameraFragment"
+        android:label="Red camera"
+        tools:layout="@layout/red_camera_fragment" />
+    <fragment
+        android:id="@+id/nav_green_camera"
+        android:name="com.expandablenavigationview.ui.camera.GreenCameraFragment"
+        android:label="Green camera"
+        tools:layout="@layout/green_camera_fragment" />
+
+    <fragment
+        android:id="@+id/nav_pictures"
+        android:name="com.expandablenavigationview.ui.gallery.PicturesFragment"
+        android:label="Pictures"
+        tools:layout="@layout/nav_pictures_fragment" />
+
+    <fragment
+        android:id="@+id/nav_documents"
+        android:name="com.expandablenavigationview.ui.gallery.DocumentsFragment"
+        android:label="Documents"
+        tools:layout="@layout/documents_fragment" />
+
+    <fragment
+        android:id="@+id/nav_my_slideshow"
+        android:name="com.expandablenavigationview.ui.slideshow.MySlidesFragment"
+        android:label="My slideshow"
+        tools:layout="@layout/my_slides_fragment" />
+
+    <fragment
+        android:id="@+id/nav_friends_slides"
+        android:name="com.expandablenavigationview.ui.slideshow.FriendsSlidesFragment"
+        android:label="Slideshow of my friends"
+        tools:layout="@layout/friends_slides_fragment" />
+
+</navigation>
